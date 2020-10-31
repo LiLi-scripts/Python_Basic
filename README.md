@@ -2,4 +2,6 @@
 
 Hello World!
 
-I like coding, WiFi, challenges and have fun.
+Happy Halloween!📆🎃
+
+I like coding💻, singing🎶, challenges and have fun🎉.
