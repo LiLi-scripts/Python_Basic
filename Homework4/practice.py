@@ -28,3 +28,4 @@ print (s [18:39])
 
 print (len (s))
 print (s [:33] * 3 + s [33:])
+
