@@ -7,22 +7,26 @@
 
 
 s = input ("1. Enter a string: ")
+s1 = s * 2
+template_1 = "Some string {0}\nSome edited string {1}"
 
 count_l = count_u = 0
-
 
 for i in s:
     if i.islower ():
         count_l += 1
     elif i.isupper ():
-        count_u += 1
-    elif count_l > count_u:
-        print (s.lower())
-    elif count_l < count_u:
-        print (s.upper())
-    else:
-        print (s.swapcase())
+        count_u += 1   
 print ("Upper case = ", count_u, "Lower case = ",count_l)
+
+if count_l > count_u:
+    print (s.lower())
+elif count_l < count_u:
+    print (s.upper())
+else:
+    print (s.swapcase())
+
+print (template_1.format (s, s1))
 
  #2 Task
 #Вводится строка.
@@ -35,8 +39,6 @@ s = input ("2. Enter a string: ")
 s1 = s * 2
 
 t = "done."
-
-template_1 = "Some string {0}\nSome edited string {1}"
 
 if s.istitle ():
     print (t + s)
@@ -59,8 +61,6 @@ print (template_1.format (s, s1))
 
 s = input ("3. Enter a string: ")
 s1 = s * 2
-
-template_1 = "Some string {0}\nSome edited string {1}"
 
 if len (s) > 20:
      s = s [:21]
